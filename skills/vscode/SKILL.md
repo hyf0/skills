@@ -1,14 +1,7 @@
 ---
 name: vscode
-description: Open the current working directory or a specified folder in Visual Studio Code. Use /vscode command.
-metadata:
-  author: Yunfei He
-  version: "1.0.0"
+description: Open the current working directory or a specified folder in Visual Studio Code.
 ---
-
-# VS Code Opener
-
-Open folders in Visual Studio Code from your terminal.
 
 ## Usage
 
@@ -17,15 +10,8 @@ Open folders in Visual Studio Code from your terminal.
 
 ## Implementation
 
-When invoked:
-1. If arguments are provided, use them as the folder path
-2. Otherwise, use the current working directory
-3. Run the `code` command to open VS Code
+Run `code` with arguments if provided, otherwise open current directory:
 
 ```bash
-# With arguments
-code $ARGUMENTS
-
-# Without arguments
-code .
+code ${ARGUMENTS:-.}
 ```
