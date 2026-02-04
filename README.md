@@ -1,4 +1,4 @@
-# agent-skills
+# skills
 
 A collection of skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
@@ -6,10 +6,10 @@ A collection of skills for [Claude Code](https://docs.anthropic.com/en/docs/clau
 
 ```bash
 # Install globally
-npx skills add hyf0/agent-skills -g
+npx skills add hyf0/skills -g
 
 # Or install to a specific project
-npx skills add hyf0/agent-skills
+npx skills add hyf0/skills
 ```
 
 ## Available Skills
