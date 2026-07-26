@@ -1,6 +1,7 @@
 ---
 name: hyfdev-rolldown-pr-review
-description: Reviewer-side review of rolldown/rolldown pull requests and PR stacks that ends in an evidence-backed Approve or Request changes decision. Use whenever the user asks to review, adversarially review, re-review, approve, request changes on, or decide whether to merge a Rolldown PR or stack. Do not use for implementing fixes or for addressing review comments received on the user's own PR.
+description: Reviewer-side review of rolldown/rolldown pull requests and PR stacks that ends in an evidence-backed Approve or Request changes decision. Explicit invoke only — do not use for implementing fixes or for addressing review comments received on the user's own PR.
+disable-model-invocation: true
 ---
 
 # Rolldown PR Review
