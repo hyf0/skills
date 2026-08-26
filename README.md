@@ -6,7 +6,7 @@ Reusable skills for Claude Code and Codex.
 
 ### [hyfdev-adversarial-review](skills/hyfdev-adversarial-review/SKILL.md)
 
-Adversarial review of a finished deliverable before it reaches the user: fresh reviewer subagents try to disprove it from three directions (open, over-engineering, residue), the agent verifies and fixes what holds, then reports. Runs once per deliverable when the agent considers it done, or on request at level strong or max (`/hyfdev-adversarial-review strong` in Claude Code, `$hyfdev-adversarial-review strong` in Codex).
+Adversarial review of a finished deliverable before it reaches the user: fresh reviewer subagents try to disprove it from three directions (open, over-engineering, residue), the agent verifies and fixes what holds, then reports. Runs once per deliverable when the agent considers it done, or on request at level strong (强力) or max (极致) (`/hyfdev-adversarial-review strong` in Claude Code, `$hyfdev-adversarial-review strong` in Codex).
 
 Install globally for Claude Code and Codex:
 

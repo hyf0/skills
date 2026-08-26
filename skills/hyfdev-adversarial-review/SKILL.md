@@ -1,6 +1,6 @@
 ---
 name: hyfdev-adversarial-review
-description: Adversarial review of a finished deliverable — a change ready for a PR, an investigation report, a recommendation, a batch of record edits — before it is reported to the user. Spawns fresh reviewer subagents briefed to disprove it from three directions (open, over-engineering, residue), verifies and fixes what holds, then reports. Run once per deliverable when it is considered done, and on request at level strong or max. Not for answers to questions, lookups, or steps inside a task.
+description: Adversarial review (对抗 review) of a finished deliverable — a change ready for a PR, an investigation report, a recommendation, a batch of record edits — before it is reported to the user. Spawns fresh reviewer subagents briefed to disprove it from three directions (open, over-engineering, residue), verifies and fixes what holds, then reports. Run once per deliverable when it is considered done, and on request at level strong (强力) or max (极致). Not for answers to questions, lookups, or steps inside a task.
 ---
 
 # Adversarial Review
@@ -25,8 +25,8 @@ Run this after a deliverable is finished and before it reaches the user. The goa
 The user names the level in the invocation or the message; without a name, run the default.
 
 - **Default**: one round. Two fresh subagents in parallel — Reviewer A: open; Reviewer B: over-engineering and residue together. Fix, then report.
-- **Strong**: two rounds. Round one as above, fix, then round two with new fresh subagents and the same briefs — they review the fixed deliverable and know nothing of round one — fix again, then one report covering both rounds.
-- **Max**: strong, with two fresh subagents per direction in every round — four per round, eight in total. Reviewers of the same direction get the same brief and do not know of each other.
+- **Strong (强力)**: two rounds. Round one as above, fix, then round two with new fresh subagents and the same briefs — they review the fixed deliverable and know nothing of round one — fix again, then one report covering both rounds.
+- **Max (极致)**: strong, with two fresh subagents per direction in every round — four per round, eight in total. Reviewers of the same direction get the same brief and do not know of each other.
 
 ## Reviewers
 
